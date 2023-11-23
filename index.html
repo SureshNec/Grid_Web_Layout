@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Grid Web Layout</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Grid Web Layout</h1>
+    </header>
+
+    <nav>
+      <ul class="menu">
+        <li onclick="location.href='#' ">Home</li>
+        <li onclick="location.href='#' " class="active">
+          Products
+          <ul class="dropdown">
+            <li onclick="location.href='#' ">List 1</li>
+            <li onclick="location.href='#' ">List 2</li>
+            <li onclick="location.href='#' ">List 3</li>
+            <li onclick="location.href='#' ">List 4</li>
+          </ul>
+        </li>
+        <li onclick="location.href='#' ">About</li>
+        <li onclick="location.href='#' ">Contact</li>
+        <li onclick="location.href='#' " class="right">Help</li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="box1 box">
+        <h3>Left Content</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+          iusto obcaecati, deleniti asperiores incidunt cupiditate, veniam
+          commodi labore amet consectetur modi rerum tempore nihil fugit vitae
+          ipsa accusantium. Aliquid, natus.
+        </p>
+      </div>
+      <div class="box2 box">
+        <h3>Middle Content</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+          iusto obcaecati, deleniti asperiores incidunt cupiditate, veniam
+          commodi labore amet consectetur modi rerum tempore nihil fugit vitae
+          ipsa accusantium. Aliquid, natus.
+        </p>
+        <br />
+        <img
+          src="../image/css-flexbox-poster.png"
+          width="200px"
+          alt="flexbox_poster"
+          draggable="false"
+          onclick="location.href='../image/css-flexbox-poster.png'"
+        />
+      </div>
+      <div class="box3 box">
+        <h3>Right Content</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+          iusto obcaecati, deleniti asperiores incidunt cupiditate, veniam
+          commodi labore amet consectetur modi rerum tempore nihil fugit vitae
+          ipsa accusantium. Aliquid, natus.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>© by Developer. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

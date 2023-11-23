@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+body {
+    background-color: rgb(236, 236, 236);
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: 20vh auto 60vh auto;
+    gap: 5px;
+    margin: 5px;
+}
+header {
+    background-color: rgb(119, 211, 212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    background-color: darkcyan;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Navigation Bar */
+.menu {
+    background-color: darkcyan;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.menu li {
+    padding: 10px;
+    color: aliceblue;
+    cursor: pointer;
+    position: relative;
+}
+.right {
+    margin-left: auto;
+}
+.active {
+    background-color: rgb(39, 185, 39);
+}
+.menu li:hover:not(.active) {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: inset 1px 1px 8px #979797;
+}
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    list-style-type: none;
+    background-color: darkcyan;
+    margin-top: 10px;
+    margin-left: -10px;
+    width: 100%;
+    display: none;
+    z-index: 999;
+    box-shadow: 2px 2px 20px #1aa891;
+}
+.menu li:hover .dropdown {
+    display: block;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+.box {
+    background-color: rgb(202, 202, 202);
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+/* .box2 {
+    background-image: url(../image/css-flexbox-poster.png); 
+} */
+
+@media (max-width: 500px) {
+    .menu {
+        flex-direction: column;
+    }
+    .right {
+        margin: 0;
+    }
+    main {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        overflow: auto;
+    }
+}
+
+img:hover {
+    z-index: 999;
+    width: 300px;
+    border: 3px solid orange;
+    box-shadow: 5px 3px 15px #c53b3b;
+}
